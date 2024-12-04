@@ -14,6 +14,7 @@ public class Expertise {
 		driver.get("https://consortium-analytics.web.app/");
 		driver.findElement(By.xpath("/html/body/div/div/nav/div/div/div[2]/div[1]/a")).click();
 		Thread.sleep(1000);
+		//Dropdown handdle using css selector
 		driver.findElement(By.xpath("/html/body/div/div/nav/div/div[1]/div[2]/div[2]/a")).click();
 		List<WebElement> options = driver.findElements(By.cssSelector(".mb-2>a"));
 		for(WebElement option : options)
